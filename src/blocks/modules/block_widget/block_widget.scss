@@ -93,7 +93,7 @@
             margin-right: 0;
         }
     }
-    &__block {
+    .cc2_zCUwpl {
         width: calc(33.3% - vw(24));
         margin-left: vw(12);
         margin-right: vw(12);
@@ -113,7 +113,7 @@
             margin-right: 0;
             width: 100%;
         }
-        .vacanciesWidgetContainer {
+        & > div, .vacanciesWidgetContainer {
             width: 100% !important;
         }
     }

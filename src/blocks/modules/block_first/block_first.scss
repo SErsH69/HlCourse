@@ -107,10 +107,14 @@
         overflow: hidden;
         display: flex;
         align-items: flex-end;
+        cursor: pointer;
+        * {
+            pointer-events: none;
+        }
         @media all and (max-width: 1023px) {
             width: 100%;
             padding: 15px;
-            padding-top: 150px;
+            padding-top: 250px;
         }
         img {
             width: 100%;

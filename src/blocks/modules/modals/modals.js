@@ -1,3 +1,5 @@
+import IMask from 'imask';
+
 const Modals = class Modals {
     constructor({modalsSelector, modalsOpenerSelector, openedClass}){
         this.modalsSelector = modalsSelector;
@@ -39,7 +41,21 @@ const Modals = class Modals {
             }
         })
     }
+    inputMusk() {
+        document.addEventListener("DOMContentLoaded", function() {
+            const phoneInputs = document.querySelectorAll('input[type="tel"]');
+            phoneInputs.forEach((phoneInput) => {
+            
+                let phoneMask = new IMask(phoneInput, {
+            
+                    mask: "+{7} (000) 000-00-00",
+            
+                  });
+            }); 
+        });              
+    }
     init() {
+        this.inputMusk();
         if (!this.modalsSelector && this.modalsOpenerSelector) return;
         this.addClickListener();
         this.addKeyupListener();

@@ -57,12 +57,16 @@
         margin-right: vw(12);
         width: calc(25% - vw(24));
         margin-bottom: vw(24);
+        cursor: pointer;
         color: var(--black);
         text-decoration: none;
         display: block;
         padding: vw(16);
         border-radius: 10px;
         background: var(--white);
+        * {
+            pointer-events: none;
+        }
         @media all and (max-width: 1023px) {
             margin-left: 12px;
             margin-right: 12px;

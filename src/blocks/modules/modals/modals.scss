@@ -11,6 +11,18 @@
     visibility: hidden;
     transition: all .3s ease;
     padding: 16px;
+    &.modal_videos {
+        .modal__in {
+            max-width: vw(1400);
+            @media all and (max-width: 1023px) {
+                padding-top: 60px;
+            }
+        }
+        iframe {
+            height: vw(600) !important;
+            width: 100% !important;
+        }
+    }
     &.isOpened {
         opacity: 1;
         visibility: visible;
@@ -59,14 +71,14 @@
     &__title {
         font-family: var(--second-family);
         font-weight: 400;
-        font-size: 64px;
+        font-size: vw(64);
         line-height: 100%;
         text-transform: uppercase;
         color: var(--black);
         margin-bottom: vw(24);
         @media all and (max-width: 1023px) {
             margin-bottom: 20px;
-            font-size: 40px;
+            font-size: 50px;
         }
         span {
             color: var(--red);
