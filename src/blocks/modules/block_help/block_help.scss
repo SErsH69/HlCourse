@@ -10,9 +10,11 @@
         padding: vw(40);
         background: var(--white) url(../img/bg.png) 100% no-repeat;
         margin-bottom: vw(24);
+        background-size: 70% !important;
         @media all and (max-width: 1023px) {
             padding: 20px;
             margin-bottom: 20px;
+            background: var(--white) !important;
         }
     }
     &__flag {

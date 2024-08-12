@@ -1441,6 +1441,7 @@ textarea {
   border-radius: 10px;
   padding: 2.0833333333vw;
   margin-bottom: 1.25vw;
+  background-size: 70% !important;
 }
 
 .block_widget__flag {
@@ -1777,6 +1778,7 @@ textarea {
   border-radius: 10px;
   padding: 2.0833333333vw;
   margin-bottom: 1.25vw;
+  background-size: 70% !important;
 }
 
 .block_help__flag {
@@ -2052,6 +2054,7 @@ textarea {
   border-radius: 10px;
   padding: 2.0833333333vw;
   margin-bottom: 1.25vw;
+  background-size: 70% !important;
 }
 
 .block_who__flag {
@@ -3751,6 +3754,7 @@ textarea {
   .block_widget__top {
     padding: 20px;
     margin-bottom: 20px;
+    background: var(--white) !important;
   }
 
   .block_widget__flag {
@@ -3910,6 +3914,7 @@ textarea {
   .block_help__top {
     padding: 20px;
     margin-bottom: 20px;
+    background: var(--white) !important;
   }
 
   .block_help__flag {
@@ -4042,6 +4047,7 @@ textarea {
   .block_who__top {
     padding: 20px;
     margin-bottom: 20px;
+    background: var(--white) !important;
   }
 
   .block_who__flag {
