@@ -1505,6 +1505,10 @@ textarea {
   margin-bottom: 1.25vw;
 }
 
+.block_widget__block .vacanciesWidgetContainer {
+  width: 100% !important;
+}
+
 .block_video {
   background: var(--white);
   padding-top: 4.9479166667vw;
