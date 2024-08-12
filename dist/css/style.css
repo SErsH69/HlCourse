@@ -1503,6 +1503,9 @@ textarea {
   margin-left: 0.625vw;
   margin-right: 0.625vw;
   margin-bottom: 1.25vw;
+  border-radius: 10px;
+  background: var(--white);
+  padding: 0.8333333333vw;
 }
 
 .block_widget__block .vacanciesWidgetContainer {
@@ -3808,6 +3811,7 @@ textarea {
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 20px;
+    padding: 15px;
     width: calc(50% - 24px);
   }
 

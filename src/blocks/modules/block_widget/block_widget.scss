@@ -98,10 +98,14 @@
         margin-left: vw(12);
         margin-right: vw(12);
         margin-bottom: vw(24);
+        border-radius: 10px;
+        background: var(--white);
+        padding: vw(16);
         @media all and (max-width: 1023px) {
             margin-left: 12px;
             margin-right: 12px;
             margin-bottom: 20px;
+            padding: 15px;
             width: calc(50% - 24px);
         }
         @media all and (max-width: 680px) {
