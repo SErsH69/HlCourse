@@ -481,24 +481,10 @@ template {
 }
 
 @font-face {
-  font-family: "RetniSans";
-  font-display: swap;
-  src: url("../fonts/RetniSans-Bold.woff2") format("woff2"), url("../fonts/RetniSans-Bold.woff") format("woff"), url("../fonts/RetniSans-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
   font-family: "DAMN";
   font-display: swap;
   src: url("../fonts/DAMN.woff2") format("woff2"), url("../fonts/DAMN.woff") format("woff"), url("../fonts/DAMN.ttf") format("ttf");
   font-weight: 400;
-}
-
-@font-face {
-  font-family: "RetniSans";
-  font-display: swap;
-  src: url("../fonts/RetniSans-Light.woff2") format("woff2"), url("../fonts/RetniSans-Light.woff") format("woff"), url("../fonts/RetniSans-Light.ttf") format("ttf");
-  font-weight: 300;
 }
 
 @font-face {
@@ -513,6 +499,20 @@ template {
   font-display: swap;
   src: url("../fonts/RetniSans-Regular.woff2") format("woff2"), url("../fonts/RetniSans-Regular.woff") format("woff"), url("../fonts/RetniSans-Regular.ttf") format("ttf");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "RetniSans";
+  font-display: swap;
+  src: url("../fonts/RetniSans-Bold.woff2") format("woff2"), url("../fonts/RetniSans-Bold.woff") format("woff"), url("../fonts/RetniSans-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RetniSans";
+  font-display: swap;
+  src: url("../fonts/RetniSans-Light.woff2") format("woff2"), url("../fonts/RetniSans-Light.woff") format("woff"), url("../fonts/RetniSans-Light.ttf") format("ttf");
+  font-weight: 300;
 }
 
 :root {
@@ -1489,6 +1489,20 @@ textarea {
   font-size: 0.9375vw;
   line-height: 120%;
   color: var(--black);
+}
+
+.block_widget__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.625vw;
+  margin-right: -0.625vw;
+}
+
+.block_widget__block {
+  width: calc(33.3% - 1.25vw);
+  margin-left: 0.625vw;
+  margin-right: 0.625vw;
+  margin-bottom: 1.25vw;
 }
 
 .block_video {
@@ -3781,6 +3795,18 @@ textarea {
     font-size: 16px;
   }
 
+  .block_widget__blocks {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .block_widget__block {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    width: calc(50% - 24px);
+  }
+
   .block_video {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -4684,6 +4710,17 @@ textarea {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .block_widget__blocks {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .block_widget__block {
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
   }
 
