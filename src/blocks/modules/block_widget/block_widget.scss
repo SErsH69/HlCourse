@@ -1,0 +1,80 @@
+.block_widget {
+    padding-top: vw(48);
+    padding-bottom: vw(48);
+    @media all and (max-width: 1023px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__top {
+        border-radius: 10px;
+        padding: vw(40);
+        background: var(--white) url(../img/bg.png) 100% no-repeat;
+        margin-bottom: vw(24);
+        @media all and (max-width: 1023px) {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    &__flag {
+        background: var(--red);
+        border-radius: 4px;
+        padding: vw(8);
+        padding-left: vw(16);
+        position: relative;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: vw(16);
+        line-height: 100%;
+        color: var(--white);
+        display: inline-block;
+        width: max-content;
+        max-width: 100%;
+        margin-bottom: vw(64);
+        @media all and (max-width: 1023px) {
+            font-size: 15px;
+            padding: 8px;
+            padding-left: 16px;
+            margin-right: 12px;
+            margin-bottom: 20px;
+            width: auto;
+        }
+        &:before {
+            left: vw(8);
+            content: '';
+            width: vw(4);
+            height: vw(4);
+            position: absolute;
+            border-radius: 50%;
+            background: var(--white);
+            margin-top: vw(-2);
+            top: 50%;
+            @media all and (max-width: 1023px) {
+                margin-top: -2px;
+                left: 8px;
+                width: 4px;
+                height: 4px;
+            }
+        }
+    }
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: vw(82);
+        line-height: 100%;
+        text-transform: uppercase;
+        color: var(--black);
+        @media all and (max-width: 1023px) {
+            font-size: 40px;
+        }
+    }
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: vw(18);
+        line-height: 120%;
+        color: var(--black);
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+        }
+    }
+}

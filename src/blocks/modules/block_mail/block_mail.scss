@@ -1,0 +1,153 @@
+.block_mail {
+    padding-top: vw(96);
+    padding-bottom: vw(48);
+    @media all and (max-width: 1023px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__block {
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        padding: vw(24) vw(24) vw(24) vw(48);
+        background: var(--white) url(../img/bg2.png) 100% no-repeat;
+        @media all and (max-width: 1023px) {
+            padding: 20px;
+            flex-direction: column;
+            background: var(--white) !important;
+        }
+    }
+    &__l-side {
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__title {
+        margin-bottom: vw(24);
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: vw(64);
+        line-height: 100%;
+        text-transform: uppercase;
+        color: var(--black);
+        @media all and (max-width: 1023px) {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+    }
+    &__text {
+        margin-bottom: vw(48);
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: vw(24);
+        line-height: 120%;
+        color: var(--black);
+        @media all and (max-width: 1023px) {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+    &__mail {
+        position: relative;
+        width: 100%;
+        &:before {
+            content: '';
+            position: absolute;
+            background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.94358 3.25H14.0564C15.8942 3.24998 17.3498 3.24997 18.489 3.40314C19.6614 3.56076 20.6104 3.89288 21.3588 4.64124C22.1071 5.38961 22.4392 6.33856 22.5969 7.51098C22.75 8.65019 22.75 10.1058 22.75 11.9436V12.0564C22.75 13.8942 22.75 15.3498 22.5969 16.489C22.4392 17.6614 22.1071 18.6104 21.3588 19.3588C20.6104 20.1071 19.6614 20.4392 18.489 20.5969C17.3498 20.75 15.8942 20.75 14.0564 20.75H9.94359C8.10583 20.75 6.65019 20.75 5.51098 20.5969C4.33856 20.4392 3.38961 20.1071 2.64124 19.3588C1.89288 18.6104 1.56076 17.6614 1.40314 16.489C1.24997 15.3498 1.24998 13.8942 1.25 12.0564V11.9436C1.24998 10.1058 1.24997 8.65019 1.40314 7.51098C1.56076 6.33856 1.89288 5.38961 2.64124 4.64124C3.38961 3.89288 4.33856 3.56076 5.51098 3.40314C6.65019 3.24997 8.10582 3.24998 9.94358 3.25ZM5.71085 4.88976C4.70476 5.02502 4.12511 5.27869 3.7019 5.7019C3.27869 6.12511 3.02502 6.70476 2.88976 7.71085C2.75159 8.73851 2.75 10.0932 2.75 12C2.75 13.9068 2.75159 15.2615 2.88976 16.2892C3.02502 17.2952 3.27869 17.8749 3.7019 18.2981C4.12511 18.7213 4.70476 18.975 5.71085 19.1102C6.73851 19.2484 8.09318 19.25 10 19.25H14C15.9068 19.25 17.2615 19.2484 18.2892 19.1102C19.2952 18.975 19.8749 18.7213 20.2981 18.2981C20.7213 17.8749 20.975 17.2952 21.1102 16.2892C21.2484 15.2615 21.25 13.9068 21.25 12C21.25 10.0932 21.2484 8.73851 21.1102 7.71085C20.975 6.70476 20.7213 6.12511 20.2981 5.7019C19.8749 5.27869 19.2952 5.02502 18.2891 4.88976C17.2615 4.75159 15.9068 4.75 14 4.75H10C8.09318 4.75 6.73851 4.75159 5.71085 4.88976Z' fill='%23191B23' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.5762 7.51988C18.8413 7.83809 18.7983 8.31101 18.4801 8.57618L16.2837 10.4066C15.3973 11.1452 14.6789 11.7439 14.0448 12.1517C13.3843 12.5765 12.7411 12.8449 12 12.8449C11.2589 12.8449 10.6157 12.5765 9.95518 12.1517C9.32112 11.7439 8.60272 11.1453 7.71636 10.4066L5.51987 8.57618C5.20166 8.31101 5.15866 7.83809 5.42384 7.51988C5.68901 7.20167 6.16193 7.15868 6.48014 7.42385L8.63904 9.22293C9.572 10.0004 10.2197 10.5384 10.7666 10.8901C11.2959 11.2306 11.6549 11.3449 12 11.3449C12.3451 11.3449 12.7041 11.2306 13.2334 10.8901C13.7803 10.5384 14.428 10.0004 15.361 9.22293L17.5199 7.42385C17.8381 7.15868 18.311 7.20167 18.5762 7.51988Z' fill='%23191B23' /%3E%3C/svg%3E") 50% / 100% no-repeat;
+            width: vw(24);
+            height: vw(24);
+            top: 50%;
+            margin-top: vw(-12);
+            left: vw(0);
+            @media all and (max-width: 1023px) {
+                width: 24px;
+                height: 24px;
+                left: 0px;
+                margin-top: -12px;
+            }
+        }
+    }
+    &__form {
+        form {
+            display: inline-flex;
+            background: var(--bg);
+            border-radius: 10px;
+            padding: vw(12) vw(12) vw(12) vw(24);
+            max-width: vw(630);
+            width: 100%;
+            @media all and (max-width: 1023px) {
+                max-width: 100%;
+                padding: 12px;
+                flex-direction: column;
+            }
+        }
+        input {
+            &[type="email"] {
+                outline: unset;
+                width: 100%;
+                border: 0;
+                border-radius: 10px;
+                background-color: transparent;
+                height: vw(64);
+                padding: vw(20) vw(12) vw(20) vw(32);
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: vw(18);
+                color: var(--black);
+                text-align: left;
+                @media all and (max-width: 1023px) {
+                    height: 64px;
+                    font-size: 16px;
+                    padding: 20px;
+                    padding-left: 36px;
+                }
+            }
+            &[type="submit"] {
+                outline: unset;
+                border: 0;
+                cursor: pointer;
+                outline: none;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: vw(16);
+                text-transform: uppercase;
+                width: 100%;
+                background: var(--red);
+                text-align: center;
+                color: var(--white);
+                border-radius: 10px;
+                display: block;
+                padding: vw(20) vw(32);
+                max-width: vw(208);
+                margin-left: 10px;
+                @media all and (max-width: 1023px) {
+                    max-width: 100%;
+                }
+                &:hover {
+                    background: var(--black);
+                }
+                @media all and (max-width: 1023px) {
+                    padding: 20px;
+                    font-size: 16px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    &__r-side {
+        border-radius: 10px;
+        flex: 0 0 vw(576);
+        overflow: hidden;
+        font-size: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media all and (max-width: 1023px) {
+            flex: none;
+            width: 100%;
+        }
+    }
+}

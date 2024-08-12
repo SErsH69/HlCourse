@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <title>Главная</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+        @@include('blocks/modules/header/header.html', {})
+        <main class="content">
+            @@include('blocks/modules/block_first/block_first.html', {})
+            @@include('blocks/modules/block_ask/block_ask.html', {})
+            @@include('blocks/modules/block_teach/block_teach.html', {})
+            @@include('blocks/modules/block_kurs/block_kurs.html', {})
+            @@include('blocks/modules/block_why/block_why.html', {})
+            @@include('blocks/modules/block_widget/block_widget.html', {})
+            @@include('blocks/modules/block_video/block_video.html', {})
+            @@include('blocks/modules/block_mail/block_mail.html', {})
+            @@include('blocks/modules/block_red/block_red.html', {})
+            @@include('blocks/modules/block_help/block_help.html', {})
+            @@include('blocks/modules/block_form/block_form.html', {})
+            @@include('blocks/modules/block_who/block_who.html', {})
+            @@include('blocks/modules/block_rev/block_rev.html', {})
+            @@include('blocks/modules/block_pref/block_pref.html', {})
+            @@include('blocks/modules/block_service/block_service.html', {})
+            @@include('blocks/modules/block_tabs/block_tabs.html', {})
+            @@include('blocks/modules/block_info/block_info.html', {})
+            @@include('blocks/modules/block_timer/block_timer.html', {})
+        </main>
+        @@include('blocks/modules/footer/footer.html', {})
+        @@include('blocks/modules/modals/main.modal.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
